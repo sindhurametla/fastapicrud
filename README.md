@@ -76,4 +76,4 @@ http://127.0.0.1:8000/docs
 
 Sindhura Metla
 
-GitHub: https://github.com/sindhurametla
+GitHub: https://github.com/sindhurametla/fastapicrud.git
