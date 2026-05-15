@@ -51,7 +51,7 @@ def get_bookby_id(book_id: int):
     for book in books:
         if book['id'] == book_id:
             return book
-    raise HTTPException(status_code = status.HTTP_404_NOT_FOUND, details = "Book not found")
+    raise HTTPException(status_code = status.HTTP_404_NOT_FOUND, detail = "Book not found")
 
 class Book(BaseModel):
     id: int
@@ -79,7 +79,7 @@ def book_update(book_id: int, book_update: BookUpdate):
             book["publish_date"] = book_update.publish_date
             return book
 
-    raise HTTPException(status_code = status.HTTP_404_NOT_FOUND, details = "Book not Found")
+    raise HTTPException(status_code = status.HTTP_404_NOT_FOUND, detail = "Book not Found")
      
 @app.delete('/book/{book_id}')
 def book_delete(book_id: int):
@@ -87,4 +87,4 @@ def book_delete(book_id: int):
         if book["id"] == book_id:
             books.remove(book)
             return book
-    raise HTTPException(status_code = status.HTTP_404_NOT_FOUND, details = "Book not Found")
+    raise HTTPException(status_code = status.HTTP_404_NOT_FOUND, detail = "Book not Found")
