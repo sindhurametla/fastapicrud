@@ -36,3 +36,44 @@ A simple CRUD (Create, Read, Update, Delete) REST API built using FastAPI and Py
 ```bash
 git clone https://github.com/sindhurametla/fastapicrud.git
 cd fastapicrud
+```
+
+### Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate Virtual Environment
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run Server
+
+```bash
+uvicorn main:app --reload
+```
+
+## API Documentation
+
+FastAPI automatically provides Swagger UI documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+## Author
+
+Sindhura Metla
+
+GitHub: https://github.com/sindhurametla
